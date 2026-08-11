@@ -448,6 +448,11 @@ body {
 }
 
 /* Project Section Layout with Fixed Image Sizing */
+#projects {
+    padding: 100px 10%;
+    background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+}
+
 .projects-grid {
     margin-top: 40px;
     width: 100%;
@@ -794,6 +799,103 @@ body {
 .soft-skill-info p {
     font-size: 0.9rem;
     color: #ccc;
+}
+
+/* Experience & Education Section */
+#experience {
+    padding: 100px 10%;
+    background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.experience-column-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ff0099;
+    margin-bottom: 20px;
+}
+
+.experience-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.experience-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 0, 153, 0.3), transparent);
+    transition: all 0.5s ease;
+}
+
+.experience-card:hover::before {
+    left: 100%;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.experience-header h4 {
+    font-size: 1.15rem;
+    color: #fff;
+}
+
+.experience-date {
+    font-size: 0.85rem;
+    color: #ff0099;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.experience-org {
+    font-size: 0.9rem;
+    color: #ccc;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.experience-list {
+    list-style: none;
+}
+
+.experience-list li {
+    font-size: 0.88rem;
+    color: #ccc;
+    margin-bottom: 8px;
+    padding-left: 18px;
+    position: relative;
+}
+
+.experience-list li::before {
+    content: '\25B8';
+    color: #ff0099;
+    position: absolute;
+    left: 0;
 }
 
 /* Services Section */
@@ -1372,19 +1474,21 @@ body {
 }
 /* Aquaculture Project - Left Alignment Styles */
 
-/* Make the second project card (aquaculture) have left-aligned layout */
-.project-card:nth-child(2) {
+/* Give the aquaculture project card a left-aligned, side-by-side layout.
+   Uses a dedicated class instead of nth-child so it stays correct
+   no matter where the card sits in the project order. */
+.aquaculture-project {
     flex-direction: row; /* Place image and content side by side */
     text-align: left;
 }
 
-.project-card:nth-child(2) .project-image {
-    flex: 0 0 40%; /* Image takes 40% width */
+.aquaculture-project .project-image-gallery {
+    flex: 0 0 58%; /* Image takes 58% width */
     margin-right: 2rem; /* Space between image and content */
     order: 1; /* Image comes first (left side) */
 }
 
-.project-card:nth-child(2) .project-content {
+.aquaculture-project .project-content {
     flex: 1; /* Content takes remaining space */
     text-align: left;
     order: 2; /* Content comes second (right side) */
@@ -1444,41 +1548,77 @@ body {
 }
 
 /* Content alignment for aquaculture project */
-.project-card:nth-child(2) h3 {
+.aquaculture-project h3 {
     text-align: left;
     margin-bottom: 1rem;
 }
 
-.project-card:nth-child(2) p {
+.aquaculture-project p {
     text-align: left;
     margin-bottom: 1rem;
 }
 
-.project-card:nth-child(2) .project-tech {
+.aquaculture-project .project-tech {
     justify-content: flex-start; /* Align tech tags to the left */
     margin-bottom: 1.5rem;
 }
 
-.project-card:nth-child(2) .project-links {
+.aquaculture-project .project-links {
     justify-content: flex-start; /* Align buttons to the left */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .project-card:nth-child(2) {
+    .aquaculture-project {
         flex-direction: column; /* Stack vertically on mobile */
     }
     
-    .project-card:nth-child(2) .project-image {
+    .aquaculture-project .project-image-gallery {
         flex: none;
         margin-right: 0;
         margin-bottom: 1.5rem;
         order: 1;
     }
     
-    .project-card:nth-child(2) .project-content {
+    .aquaculture-project .project-content {
         order: 2;
     }
+}
+
+/* Aquaculture gallery: two images shown together per pair,
+   auto-fading to the other pair every 60 seconds via inline script */
+.aqua-gallery {
+    position: relative;
+    height: 480px;
+    background: #000;
+}
+
+.aqua-pair {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    gap: 28px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s ease-in-out;
+    background: #000;
+}
+
+.aqua-pair.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.aqua-gallery .aqua-pair img {
+    position: static;
+    width: calc(50% - 14px);
+    height: 100%;
+    opacity: 1;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 /* Optional: JavaScript for gallery functionality */
@@ -1487,7 +1627,7 @@ body {
 }
 
 /* Ensure the gallery container has proper positioning */
-.project-card:nth-child(2) .project-image-gallery {
+.aquaculture-project .project-image-gallery {
     position: relative;
     background: #f8f9fa;
     border: 1px solid #e9ecef;

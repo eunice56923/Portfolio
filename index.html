@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eunice Nzilani | Developer & CS Student</title>
+    <title>Eunice Nzilani | React & Flutter Developer | Full-Stack Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@700;800;900&display=swap" rel="stylesheet">
@@ -35,6 +35,7 @@
         <div class="nav-links">
             <a href="#home" class="nav-link">Home</a>
             <a href="#projects" class="nav-link">Projects</a>
+            <a href="#experience" class="nav-link">Experience</a>
             <a href="#services" class="nav-link">Services</a>
             <a href="#contact" class="nav-link">Contact</a>
         </div>
@@ -58,20 +59,20 @@
                     <div class="hero-text">
                         <div class="welcome-text">
                             <span class="welcome-line"></span>
-                            <p></p>
+                            <p>Nairobi, Kenya</p>
                         </div>
                         <h1 class="glitch" data-text="Eunice Nzilani">Eunice Nzilani</h1>
                         <div class="hero-subtitle">
                             <span>I'm a</span>
                             <div class="text-rotate">
-                                <span>Developer</span>
-                                <span>CS Student</span>
-                                <span>Mobile Enthusiast</span>
-                                <span>UI/UX Designer</span>
+                                <span>I Build Web Apps</span>
+                                <span>I Build Mobile Apps</span>
+                                <span>I Run Networks</span>
+                                <span>I Ship Products</span>
                             </div>
                         </div>
                         <p class="hero-description">
-                            Passionate about creating elegant solutions through code and design. Focused on mobile development, machine learning, and full-stack web development.
+                            I don't just write code — I ship products. React and Flutter are my weapons of choice for building fast, scalable applications from the ground up, and I run the network infrastructure that keeps them online. Finance trackers, IoT-powered farm monitoring, AI safety apps — if it needs to work in production, I build it.
                         </p>
                         <div class="cta-buttons">
                             <a href="#contact" class="btn btn-primary">
@@ -107,11 +108,11 @@
                             </div>
                         </div>
                         <div class="tech-stack">
-                            <div class="tech-item" style="--i:1"><i class="fab fa-python"></i></div>
-                            <div class="tech-item" style="--i:2"><i class="fab fa-js"></i></div>
-                            <div class="tech-item" style="--i:3"><i class="fab fa-react"></i></div>
-                            <div class="tech-item" style="--i:4"><i class="fab fa-html5"></i></div>
-                            <div class="tech-item" style="--i:5"><i class="fab fa-css3-alt"></i></div>
+                            <div class="tech-item" style="--i:1"><i class="fab fa-react"></i></div>
+                            <div class="tech-item" style="--i:2"><i class="fas fa-mobile-screen-button"></i></div>
+                            <div class="tech-item" style="--i:3"><i class="fab fa-js"></i></div>
+                            <div class="tech-item" style="--i:4"><i class="fab fa-node-js"></i></div>
+                            <div class="tech-item" style="--i:5"><i class="fas fa-network-wired"></i></div>
                         </div>
                     </div>
                 </div>
@@ -133,6 +134,126 @@
                 </div>
 
                 <div class="projects-grid">
+
+                    <div class="project-card aquaculture-project">
+                        <div class="project-image-gallery aqua-gallery">
+                                <div class="aqua-pair active">
+                                    <img src="images/aqua1.jpeg" alt="Aquaculture App - Main Dashboard">
+                                    <img src="images/aqua2.jpeg" alt="Aquaculture App - Parameter Monitoring">
+                                </div>
+                                <div class="aqua-pair">
+                                    <img src="images/aqua3.jpeg" alt="Aquaculture App - Data Analysis">
+                                    <img src="images/aqua4.jpeg" alt="Aquaculture App - Alert System">
+                                </div>
+                                <div class="gallery-dots aqua-dots">
+                                    <span class="dot active" data-pair="0"></span>
+                                    <span class="dot" data-pair="1"></span>
+                                </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Aquaculture Monitoring System</h3>
+                            <p>
+                                Built an IoT-enabled Flutter mobile app for fish farmers to monitor water quality (pH, temperature, salinity, dissolved oxygen, turbidity) and feeding schedules with real-time alerts and analytics, helping prevent marine pollution and maintain optimal farming conditions.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Dart</span>
+                                <span class="tech-tag">IoT Sensors</span>
+                                <span class="tech-tag">Firebase</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/EuniceNzilani/Aquaculture-Monitoring-System" class="btn btn-small btn-outline" target="_blank">
+                                    <span>View Code</span>
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/smartsave.png" alt="SmartSave Web App">
+                        </div>
+                        <div class="project-content">
+                            <h3>SmartSave Web App</h3>
+                            <p>
+                                A personal finance tracking platform built with React and Firebase, where users create savings goals, manage transactions, and visualize financial growth using charts. Integrated Firebase authentication and Firestore for data persistence.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Charts</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/fooddashboard.png" alt="Food Delivery Dashboard">
+                        </div>
+                        <div class="project-content">
+                            <h3>Food Delivery Dashboard</h3>
+                            <p>
+                                A restaurant admin dashboard built with React and Tailwind CSS, featuring real-time order tracking, analytics, and delivery management with a responsive, sleek UI.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/portfolio.png" alt="Portfolio Website">
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Website</h3>
+                            <p>
+                                A modern personal portfolio website built with Next.js, showcasing projects and blog posts, with contact form integration, deployed via Vercel.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">Vercel</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/safetyapp.png" alt="AI-Powered Personal Safety App">
+                        </div>
+                        <div class="project-content">
+                            <h3>AI-Powered Personal Safety App</h3>
+                            <p>
+                                A Flutter mobile app that detects distress situations and sends emergency alerts using AI and GPS tracking. Integrated Firebase backend, Google Maps API, and SMS alert functionality.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">AI</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Google Maps API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/fooddelivery.png" alt="Food Delivery Application">
+                        </div>
+                        <div class="project-content">
+                            <h3>Food Delivery Application (Flutter)</h3>
+                            <p>
+                                A multi-role mobile app for vendors, riders, and customers, with order tracking, push notifications, and Firebase integration.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Flutter</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Push Notifications</span>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="project-card featured-project">
                         <div class="project-image">
                             <img src="images/visual1.png" alt="VisualAI Dashboard">
@@ -140,13 +261,7 @@
                         <div class="project-content">
                             <h3>Data Visualization Dashboard: VisualAI</h3>
                             <p>
-                                VisualAI is an interactive data visualization platform that transforms complex datasets into intuitive, explorable visualizations. Inspired by Tableau's functionality but built from the ground up, this tool empowers users to derive meaningful insights through customizable dashboards.
-                            </p>
-                            <p>
-                                The application leverages React for the frontend with D3.js/Recharts for dynamic visualizations, while a Node.js backend handles data processing. Users can upload Excel spreadsheets and instantly generate professional charts, graphs, and maps with AI-assisted recommendations for optimal visualization types based on data patterns.
-                            </p>
-                            <p>
-                                VisualAI features real-time data updates, customizable views, advanced filtering capabilities, and export options—making data exploration accessible to both analysts and non-technical users alike.
+                                An interactive data visualization platform that transforms complex datasets into intuitive, explorable dashboards. Built with React and D3.js/Recharts on the frontend and a Node.js backend for data processing, with AI-assisted recommendations for chart types based on uploaded data.
                             </p>
                             <div class="project-tech">
                                 <span class="tech-tag">React</span>
@@ -167,46 +282,81 @@
                         </div>
                     </div>
 
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="project-image-gallery">
-                                <img src="images/aqua1.png" alt="Aquaculture App - Main Dashboard" class="active">
-                                <img src="images/aqua2.png" alt="Aquaculture App - Parameter Monitoring">
-                                <img src="images/aqua3.png" alt="Aquaculture App - Data Analysis">
-                                <img src="images/aqua4.png" alt="Aquaculture App - Alert System">
-                                <div class="gallery-dots">
-                                    <span class="dot active" data-slide="0"></span>
-                                    <span class="dot" data-slide="1"></span>
-                                    <span class="dot" data-slide="2"></span>
-                                    <span class="dot" data-slide="3"></span>
-                                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="section-container">
+                <div class="section-title-container">
+                    <h2 class="section-title">Experience & Education</h2>
+                    <span class="section-subtitle">Where I've Worked and Studied</span>
+                </div>
+
+                <div class="experience-grid">
+                    <div class="experience-column">
+                        <h3 class="experience-column-title">Professional Experience</h3>
+
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <h4>Network Manager</h4>
+                                <span class="experience-date">Feb 2026 – Present</span>
                             </div>
+                            <p class="experience-org">Mzalendo Afrinet, Nairobi</p>
+                            <ul class="experience-list">
+                                <li>Manage and maintain network infrastructure to ensure reliable connectivity and uptime.</li>
+                                <li>Monitor network performance, troubleshoot issues, and implement security best practices.</li>
+                                <li>Coordinate network configuration, maintenance, and upgrades across the organization.</li>
+                            </ul>
                         </div>
-                        <div class="project-content">
-                            <h3>Aquaculture Monitoring System</h3>
-                            <p>
-                                A comprehensive mobile application designed to monitor and prevent marine pollution in aquaculture farms through real-time water quality analysis. The system integrates IoT sensors with machine learning algorithms to provide early warning detection and optimal farming conditions.
-                            </p>
-                            <p>
-                                The application connects to multiparameter probes that continuously measure critical water quality parameters including temperature, salinity, pH, dissolved oxygen, turbidity, and conductivity. Machine learning algorithms analyze these patterns to predict potential pollution events and send early warnings to farmers.
-                            </p>
-                            <p>
-                                Features include real-time parameter monitoring, comparative analysis against optimal ranges, historical data visualization, interactive reporting system for pollution incidents, and user verification for business accounts. The system helps maintain optimal conditions for aquaculture production while protecting marine environments.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Flutter</span>
-                                <span class="tech-tag">Dart</span>
-                                <span class="tech-tag">IoT Sensors</span>
-                                <span class="tech-tag">Machine Learning</span>
-                                <span class="tech-tag">Firebase</span>
-                                <span class="tech-tag">Real-time Data</span>
+
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <h4>IT Attaché</h4>
+                                <span class="experience-date">2024</span>
                             </div>
-                            <div class="project-links">
-                                <a href="https://github.com/EuniceNzilani/Aquaculture-Monitoring-System" class="btn btn-small btn-outline" target="_blank">
-                                    <span>View Code</span>
-                                    <i class="fab fa-github"></i>
-                                </a>
+                            <p class="experience-org">Ministry of ICT & Digital Economy, Nairobi</p>
+                            <ul class="experience-list">
+                                <li>Supported troubleshooting, database management, and digital transformation initiatives.</li>
+                                <li>Assisted in web and system maintenance using JavaScript, Firebase, and REST APIs.</li>
+                                <li>Contributed to ICT policy development, cybersecurity initiatives, and data management.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience-column">
+                        <h3 class="experience-column-title">Education</h3>
+
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <h4>BSc Computer Science</h4>
+                                <span class="experience-date">2021 – 2025</span>
                             </div>
+                            <p class="experience-org">Kisii University</p>
+                        </div>
+
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <h4>KCSE</h4>
+                                <span class="experience-date">2016 – 2020</span>
+                            </div>
+                            <p class="experience-org">Precious Blood Riruta</p>
+                        </div>
+
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <h4>KCPE</h4>
+                                <span class="experience-date">2008 – 2016</span>
+                            </div>
+                            <p class="experience-org">St. Elizabeth Primary School</p>
+                        </div>
+
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <h4>Languages</h4>
+                            </div>
+                            <p class="experience-org">English, Kiswahili</p>
                         </div>
                     </div>
                 </div>
@@ -227,7 +377,7 @@
                             <i class="fas fa-code"></i>
                         </div>
                         <h3>Web Development</h3>
-                        <p>I design and develop custom websites tailored to your business needs, with a focus on performance and user experience.</p>
+                        <p>Custom websites built with React, Next.js, and Tailwind CSS, tailored to your business needs, with a focus on performance and user experience.</p>
                         <ul class="service-features">
                             <li>Responsive Design</li>
                             <li>Performance Optimization</li>
@@ -241,7 +391,7 @@
                             <i class="fas fa-mobile-alt"></i>
                         </div>
                         <h3>Mobile App Development</h3>
-                        <p>Creating mobile apps that are functional, user-friendly, and beautiful, for both Android and iOS platforms.</p>
+                        <p>Cross-platform mobile apps built with Flutter and Dart that are functional, user-friendly, and beautiful, for both Android and iOS.</p>
                         <ul class="service-features">
                             <li>Native & Cross-platform</li>
                             <li>Offline Functionality</li>
@@ -252,10 +402,24 @@
 
                     <div class="service-card">
                         <div class="service-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Network Management</h3>
+                        <p>Setting up, monitoring, and securing network infrastructure to keep systems connected, reliable, and running smoothly.</p>
+                        <ul class="service-features">
+                            <li>Infrastructure Setup & Maintenance</li>
+                            <li>Performance Monitoring</li>
+                            <li>Security Best Practices</li>
+                        </ul>
+                        <div class="service-decoration"></div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
                             <i class="fas fa-paint-brush"></i>
                         </div>
                         <h3>UI/UX Design</h3>
-                        <p>Designing intuitive and attractive user interfaces for enhanced user experience and increased engagement.</p>
+                        <p>Designing intuitive and attractive user interfaces in Figma for enhanced user experience and increased engagement.</p>
                         <ul class="service-features">
                             <li>User Research</li>
                             <li>Wireframing & Prototyping</li>
@@ -280,21 +444,21 @@
                         <div class="contact-card">
                             <i class="fas fa-envelope contact-icon"></i>
                             <h3>Email</h3>
-                            <p>eunicenzilani881@com</p>
-                            <a href="mailto:eunicenzilani881@com" class="contact-link">Send a message</a>
+                            <p>eunicenzilani881@gmail.com</p>
+                            <a href="mailto:eunicenzilani881@gmail.com" class="contact-link">Send a message</a>
                         </div>
 
                         <div class="contact-card">
                             <i class="fas fa-phone contact-icon"></i>
                             <h3>Phone</h3>
-                            <p>(254) 793002907</p>
-                            <a href="tel:+254793002907" class="contact-link">Call me</a>
+                            <p>0794 846 559</p>
+                            <a href="tel:+254794846559" class="contact-link">Call me</a>
                         </div>
 
                         <div class="contact-card">
                             <i class="fas fa-map-marker-alt contact-icon"></i>
                             <h3>Location</h3>
-                            <p>Kenya</p>
+                            <p>Nairobi, Kenya</p>
                             <a href="#" class="contact-link">View on map</a>
                         </div>
 
@@ -358,6 +522,7 @@
                     <h4>Quick Links</h4>
                     <a href="#home">Home</a>
                     <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
                     <a href="#services">Services</a>
                     <a href="#contact">Contact</a>
                 </div>
@@ -381,5 +546,28 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
+    <script>
+    (function () {
+        var gallery = document.querySelector('.aqua-gallery');
+        if (!gallery) return;
+        var pairs = gallery.querySelectorAll('.aqua-pair');
+        var dots = gallery.querySelectorAll('.aqua-dots .dot');
+        var current = 0;
+
+        function showPair(index) {
+            pairs.forEach(function (p, i) { p.classList.toggle('active', i === index); });
+            dots.forEach(function (d, i) { d.classList.toggle('active', i === index); });
+            current = index;
+        }
+
+        dots.forEach(function (dot, i) {
+            dot.addEventListener('click', function () { showPair(i); });
+        });
+
+        setInterval(function () {
+            showPair((current + 1) % pairs.length);
+        }, 6000); // switch pairs every 6 seconds
+    })();
+    </script>
 </body>
 </html>
